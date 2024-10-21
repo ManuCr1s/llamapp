@@ -52,13 +52,7 @@ class CriadorRequest extends FormRequest
             'nombres'=>['required','string','max:50'],
             'telefono'=>['required','string','max:50'],
             'dni'=>['required','string','max:50'],
-            'nombre_ganaderia'=>['required','string','max:50'],
-            'estado'=>['required'],
-            'id_region'=>['required'],
-            'id_province'=>['required'],
-            'id_distrito'=>['required'],
-            'id_centro_poblado'=>['required'],
-            'id_caserio_anexo'=>['required'],
+            'nombre_ganaderia'=>['required','string','max:50']
         ];
     }
 }
