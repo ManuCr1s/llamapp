@@ -32,7 +32,8 @@ class CriadorController extends Controller
      */
     public function store(CriadorRequest $request)
     {
-        Criador::create($request->validated());
+        
+        Criador::create($request->all());
         return redirect()->route('criadores.index');
     }
 

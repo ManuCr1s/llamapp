@@ -22,6 +22,7 @@ class CriadorRequest extends FormRequest
     public function messages():array
     {
         return [
+            'id_criador.required'=>__('Ingrese Codigo de Criador'),
             'apellido_paterno.required'=>__('Ingrese Apellido Paterno'),
             'apellido_paterno.string'=>__('Ingrese cadena de texto'),
             'apellido_paterno.max'=>__('Ingrese menos de 50'),
@@ -45,12 +46,19 @@ class CriadorRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'id_criador'=>['required'],
             'apellido_paterno'=>['required','string','max:50'],
             'apellido_materno'=>['required','string','max:50'],
             'nombres'=>['required','string','max:50'],
             'telefono'=>['required','string','max:50'],
             'dni'=>['required','string','max:50'],
             'nombre_ganaderia'=>['required','string','max:50'],
+            'estado'=>['required'],
+            'id_region'=>['required'],
+            'id_province'=>['required'],
+            'id_distrito'=>['required'],
+            'id_centro_poblado'=>['required'],
+            'id_caserio_anexo'=>['required'],
         ];
     }
 }

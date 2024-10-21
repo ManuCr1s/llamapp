@@ -33,6 +33,9 @@ export default{
         </template>
         <template #form>
             <div class="col-span-6 sm:col-span-6">
+                <InputLabel for="id_criador" value="Identificador"></InputLabel>
+                <TextInput id="id_criador" v-model="form.id_criador" type="text" autocomplete="id_criador" class="mt-1 block w-full"> </TextInput>
+                <InputError :message="$page.props.errors.id_criador" class="mt-2"></InputError>
                 <InputLabel for="apaterno" value="Apellido Paterno"></InputLabel>
                 <TextInput id="apaterno" v-model="form.apellido_paterno" type="text" autocomplete="apellido_paterno" class="mt-1 block w-full"> </TextInput>
                 <InputError :message="$page.props.errors.apellido_paterno" class="mt-2"></InputError>

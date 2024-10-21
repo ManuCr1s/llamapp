@@ -8,12 +8,19 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import {useForm} from '@inertiajs/vue3';
 import CriadorForm from '@/Components/Criadores/Form.vue';
 const form =useForm({
+    id_criador:'',
     apellido_paterno:'',
     apellido_materno:'',
     nombres:'',
     telefono:'',
     dni:'',
-    nombre_ganaderia:''
+    nombre_ganaderia:'',
+    estado:true,
+    id_region:19,
+    id_province:1,
+    id_distrito:1,
+    id_centro_poblado:1,
+    id_caserio_anexo:1
 });
 defineProps({
     criadores:{
