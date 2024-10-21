@@ -16,7 +16,7 @@ const form =useForm({
     nombre_ganaderia:''
 });
 defineProps({
-    roles:{
+    criadores:{
         type:Object,
         required:true   
     }

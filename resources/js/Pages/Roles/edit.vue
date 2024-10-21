@@ -26,6 +26,7 @@ const form = useForm({
         </template>
         <div class="bg-white py-10 sm:py-10">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                {{ form }}
                 <RoleForm :updating="true" :form="form" @submit="form.put(route('roles.update',role.id))"></RoleForm>
             </div>
         </div>

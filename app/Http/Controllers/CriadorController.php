@@ -47,16 +47,18 @@ class CriadorController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Criador $criador)
+    public function edit($id)
     {
+        $criador = Criador::findOrFail($id);
         return inertia('Criadores/edit',['criador'=>$criador]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(CriadorRequest $request, Criador $criador)
+    public function update(CriadorRequest $request, $id)
     {
+        $criador = Criador::findOrFail($id);
         $criador->update($request->validated());
         return redirect()->route('criadores.index');
     }

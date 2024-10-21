@@ -29,7 +29,7 @@ const form = useForm({
         </template>
         <div class="bg-white py-10 sm:py-10">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <CriadorForm :updating="true" :form="form" @submit="form.put(route('criadores.update',criador.id))"></CriadorForm>
+                <CriadorForm :updating="true" :form="form" @submit="form.put(route('criadores.update',criador.id_criador))"></CriadorForm>
             </div>
         </div>
     </AppLayout>
