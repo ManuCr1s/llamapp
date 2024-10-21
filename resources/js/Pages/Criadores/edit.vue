@@ -14,6 +14,7 @@ const props = defineProps({
     }
 });
 const form = useForm({
+    id_criador:props.criador.id_criador,
     apellido_paterno:props.criador.apellido_paterno,
     apellido_materno:props.criador.apellido_materno,
     nombres:props.criador.nombres,
