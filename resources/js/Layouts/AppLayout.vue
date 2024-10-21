@@ -54,7 +54,7 @@ const logout = () => {
                                 <NavLink :href="route('roles.index')" :active="route().current('roles.*')" v-if="$page.props.user.permissions.includes('read roles')">
                                     Roles
                                 </NavLink>
-                                <NavLink :href="route('roles.index')" :active="route().current('roles.*')" v-if="$page.props.user.permissions.includes('read roles')">
+                                <NavLink :href="route('criadores.index')" :active="route().current('criadores.*')" v-if="$page.props.user.permissions.includes('read roles')">
                                     Productores
                                 </NavLink>
                                 <NavLink :href="route('roles.index')" :active="route().current('roles.*')" v-if="$page.props.user.permissions.includes('read roles')">

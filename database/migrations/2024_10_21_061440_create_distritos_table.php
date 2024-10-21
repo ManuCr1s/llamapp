@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id('id_distrito');
             $table->string('nombre', 100);
             $table->unsignedBigInteger('id_province');
-            $table->foreign('id_province')->references('id_province')->on('province')->onDelete('cascade');
+            $table->foreign('id_province')->references('id_province')->on('provinces')->onDelete('cascade');
             $table->dateTime('created_at',$precision=3);
             $table->dateTime('updated_at',$precision=3);
         });

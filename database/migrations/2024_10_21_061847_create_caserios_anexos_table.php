@@ -19,7 +19,6 @@ return new class extends Migration
                   ->references('id_centro_poblado')
                   ->on('centros_poblados')
                   ->onDelete('cascade');
-            $table->timestamps();
             $table->dateTime('created_at',$precision=3);
             $table->dateTime('updated_at',$precision=3);
         });
