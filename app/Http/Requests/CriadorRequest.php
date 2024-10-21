@@ -46,7 +46,6 @@ class CriadorRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id_criador'=>['required'],
             'apellido_paterno'=>['required','string','max:50'],
             'apellido_materno'=>['required','string','max:50'],
             'nombres'=>['required','string','max:50'],
