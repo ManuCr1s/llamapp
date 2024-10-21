@@ -33,7 +33,6 @@ export default{
         </template>
         <template #form>
             <div class="col-span-6 sm:col-span-6">
-                {{ form }}
                 <InputLabel for="apaterno" value="Apellido Paterno"></InputLabel>
                 <TextInput id="apaterno" v-model="form.apellido_paterno" type="text" autocomplete="apellido_paterno" class="mt-1 block w-full"> </TextInput>
                 <InputError :message="$page.props.errors.apellido_paterno" class="mt-2"></InputError>
