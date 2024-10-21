@@ -107,16 +107,16 @@ const disableTwoFactorAuthentication = () => {
 <template>
     <ActionSection>
         <template #title>
-            Two Factor Authentication
+            Doble Autentificacion
         </template>
 
         <template #description>
-            Add additional security to your account using two factor authentication.
+            Adiciona seguridad a tu cuenta con la doble autentificacion
         </template>
 
         <template #content>
             <h3 v-if="twoFactorEnabled && ! confirming" class="text-lg font-medium text-gray-900">
-                You have enabled two factor authentication.
+                tu tienes que habilitar la doble autentificacion
             </h3>
 
             <h3 v-else-if="twoFactorEnabled && confirming" class="text-lg font-medium text-gray-900">
@@ -129,7 +129,7 @@ const disableTwoFactorAuthentication = () => {
 
             <div class="mt-3 max-w-xl text-sm text-gray-600">
                 <p>
-                    When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.
+                    Cuando tienes activado la doble autentificacion, tu estaras mas seguro, aleatoriamente se te envia tokkens Este tokken lo podras descargar desde la aplicacion Google Authenticator
                 </p>
             </div>
 
